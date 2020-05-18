@@ -1,0 +1,197 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* Navbar Section */
+
+#navbar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "about store . gmail images menu sign-in";
+    margin: 20px;
+}
+
+a, p {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+
+#about{
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+}
+#store {
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+}
+#gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+#images {
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+    margin-right: 10px;
+}
+#menu {
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+    margin-right: 20px;
+}
+#sign-in {
+    grid-area: sign-in;
+    justify-self: center;
+    align-self: center;
+    height: 30px;
+    background-color: #4683ea;
+    width: 65px;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    font-weight: bold;
+    border: 1px solid #4285f4;
+}
+
+
+
+/* main section */
+
+#main {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 65px 65px 250px;
+    grid-template-areas: 
+    ". logo ."
+    ". search ."
+    ". flexbox ."
+    ". google-text .";
+}
+
+#logo{
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+#search{
+    grid-area: search;
+    height: 40px;
+    align-self: center; /* don't need the justify center bc that's for vertical. we only want horizontal center to allow the search bar to extend the whole box division*/
+    border: 1px solid rgb(207, 198, 198);
+    border-radius: 50px;
+    
+}
+
+#search:focus{
+    box-shadow: 1px 1px 5px grey;
+}
+
+#search:hover{
+    box-shadow: 1px 1px 5px grey;
+}
+
+#flexbox{
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+#google-search-btn{
+    grid-area: google-search-btn;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    color: rgba(71, 69, 69, 0.712);
+    background-color: #f2f2f2;
+    margin-right: 5px;
+}
+#feeling-lucky-btn{
+    grid-area: feeling-lucky-btn;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    color: rgba(71, 69, 69, 0.712);
+    background-color: #f2f2f2;
+    margin-left: 5px;
+}
+#google-search-btn:hover{
+    box-shadow: 1px 1px 5px grey;
+    border: .5px solid grey;
+    color: rgba(0, 0, 0, 0.712);
+    background-color: #f2f2f2;
+}
+
+#feeling-lucky-btn:hover{
+    box-shadow: 1px 1px 5px grey;
+    border: .5px solid grey;
+    color: rgba(0, 0, 0, 0.712);
+    background-color: #f2f2f2;
+}
+
+#google-text{
+    grid-area: google-text;
+    color: rgb(7, 7, 158);
+    justify-self: center;
+}
+
+/* footer section */
+
+#footer {
+    display: grid;
+    background-color: rgba(128, 128, 128, 0.151);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    grid-template-columns: 100px 100px 150px 1fr 70px 70px 70px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "advertising business search-works . privacy terms settings";
+}
+
+#advertising{
+    grid-area: advertising;
+    justify-self: center;
+    align-self: center;
+}
+#business{
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+}
+#search-works{
+    grid-area: search-works;
+    justify-self: center;
+    align-self: center;
+}
+#privacy{
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+}
+#terms{
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+#settings{
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
+}
