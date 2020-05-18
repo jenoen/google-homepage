@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "/Users/joen/odin_on_rails/my_first_rails_app"
+		},
+		{
+			"path": "/Users/joen/the_odin_project"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "the_odin_project"
+	}
+}
